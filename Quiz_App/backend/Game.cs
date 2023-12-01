@@ -29,10 +29,10 @@ namespace QuizApp.backend
             q2.Answers = new List<string>();
             q2.Category = 200;
             q2.Content = "Jaka jest stolica Polski?";
-            q2.Answers[0] = "Warszawa";
-            q2.Answers[1] = "Łódź";
-            q2.Answers[2] = "Toruń";
-            q2.Answers[3] = "Poznań";
+            q2.Answers.Add("Warszawa");
+            q2.Answers.Add("Łódź");
+            q2.Answers.Add("Toruń");
+            q2.Answers.Add("Poznań");
             Questions.Add(q2);
         }
 
