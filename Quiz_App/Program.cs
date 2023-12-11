@@ -4,8 +4,19 @@ using QuizApp.frontend;
 var game = new Game();
 game.CreateQuestions();
 Display.DisplayWelcome();
-var question = game.DrawQuestion();
+game.DrawQuestion();
+var userDigit = Display.DisplayQuestion(game.CurrentQuestion);
+var isCorrect = game.IsUserAnswerCorrect(userDigit);
 
+if (isCorrect)
+{
+    Display.GoodAnswerText();
+
+}
+else
+{
+    Display.GameOverText();
+}
 
 
 Console.ReadLine();
